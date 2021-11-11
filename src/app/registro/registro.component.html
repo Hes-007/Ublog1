@@ -1,0 +1,41 @@
+<app-header-home></app-header-home>
+
+<div class="container">
+
+    <div class="abs-center">
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Registro de Usuario</h5>
+            <form>
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" name="name" class="form-control" id="nameListausuariosI" placeholder="Enter Nombre" [(ngModel)]="producto.name"> 
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Genero</label>
+                <input type="text" name="gender" class="form-control" id="genderListausuariosI" placeholder="Enter gender " [(ngModel)]="producto.gender">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Nombre de Usuario</label>
+                <input type="text" name="usarname" class="form-control" id="usarnameListausuariosI" placeholder="Enter username " [(ngModel)]="producto.usarname">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Correo</label>
+                <input type="text" name="email" class="form-control" id="emailListausuariosI" placeholder="Enter email " [(ngModel)]="producto.email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Contraseña</label>
+                <input type="text" name="password" class="form-control" id="passwordListausuariosI" placeholder="Enter password " [(ngModel)]="producto.password">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="onSubmit()">Enviar</button>
+            </form>
+        </div>
+        </div>
+
+    </div>
+
+</div>
+
+<app-footer-home></app-footer-home>
+

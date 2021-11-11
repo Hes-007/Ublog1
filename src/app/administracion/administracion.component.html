@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<div class="container">
+
+    <h3>Lista de Usuarios</h3><br>
+  
+    <button type="button" class="btn btn-secondary btn-space" (click)= "nuevoCliente()">Nuevo Usuario</button>
+    <button type="button" class="btn btn-secondary btn-space" (click)="modificarCliente()">Editar Usuarios</button>
+    <button type="button" class="btn btn-secondary btn-space" (click)="publicarCliente()">Publicaciones</button>
+  
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Género</th>
+          <th scope="col">Nombre de Usuario</th>
+          <th scope="col">Correo</th>
+          <th scope="col">Contraseña</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cliente of clientes" (click) = "editarCliente(cliente.name)">
+          <th scope="row">{{ cliente.name }}</th>
+          <td>{{ cliente.gender}}</td>
+          <td>{{ cliente.usarname}}</td>
+          <td>{{ cliente.email }}</td>
+          <td>{{ cliente.password }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<app-footer></app-footer>

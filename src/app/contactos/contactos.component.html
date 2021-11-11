@@ -1,0 +1,33 @@
+<app-header-home></app-header-home>
+
+<div class="container">
+
+    <div class="abs-center">
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Contactenos</h5>
+            <form>
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" name="name" class="form-control" id="nameListausuariosI" placeholder="Nombre" [(ngModel)]="producto.name"> 
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Correo</label>
+                <input type="text" name="email" class="form-control" id="emailListausuariosI" placeholder="Email " [(ngModel)]="producto.email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Telefono</label>
+                <input type="text" name="password" class="form-control" id="passwordListausuariosI" placeholder="Teléfono" [(ngModel)]="producto.password">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="onSubmit()">Enviar</button>
+            </form>
+        </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<app-footer-home></app-footer-home>
